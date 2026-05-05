@@ -5,7 +5,18 @@ import './../styles/App.css';
 const App = () => {
   return (
     <div>
-        {/* Do not remove the main div */}
+      const counter = () => {
+    const [count, setcount] = useState(0);
+    const onAdd = () => {
+        setcount(count + 1);
+    };
+    return (
+        <div>
+            <p>Button Click {count} times</p>
+            <button onClick={onAdd}>Click me</button>
+        </div>
+    )
+    
     </div>
   )
 }
